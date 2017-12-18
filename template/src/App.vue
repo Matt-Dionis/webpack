@@ -4,20 +4,20 @@
     {{#router}}
     <router-view/>
     {{else}}
-    <HelloWorld/>
+    <HelloGraphQL/>
     {{/router}}
   </div>
 </template>
 
 <script>
 {{#unless router}}
-import HelloWorld from './components/HelloWorld'
+import HelloGraphQL from './components/HelloGraphQL'
 
 {{/unless}}
 export default {
   name: 'app'{{#router}}{{else}},
   components: {
-    HelloWorld
+    HelloGraphQL
   }{{/router}}
 }
 </script>

@@ -3,6 +3,10 @@
 // (runtime-only or standalone) has been set in webpack.base.conf with an alias.
 {{/if_eq}}
 import Vue from 'vue'
+import { ApolloClient } from 'apollo-client'
+import { HttpLink } from 'apollo-link-http'
+import { InMemoryCache } from 'apollo-cache-inmemory'
+import VueApollo from 'vue-apollo'
 import App from './App'
 {{#router}}
 import router from './router'
@@ -10,9 +14,27 @@ import router from './router'
 
 Vue.config.productionTip = false
 
+// Provide your own uri for a GraphQL endpoint here
+const httpLink = new HttpLink({
+  uri: 'https://launchpad.graphql.com/5rrx10z19'
+})
+
+const apolloClient = new ApolloClient({
+  link: httpLink,
+  cache: new InMemoryCache(),
+  connectToDevTools: true
+})
+
+Vue.use(VueApollo)
+
+const apolloProvider = new VueApollo({
+  defaultClient: apolloClient
+})
+
 /* eslint-disable no-new */
 new Vue({
   el: '#app',
+  apolloProvider,
   {{#router}}
   router,
   {{/router}}
