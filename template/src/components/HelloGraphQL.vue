@@ -11,9 +11,9 @@
       <li><a href="https://chat.vuejs.org" target="_blank">VueJS Community Chat</a></li>
       <li><a href="https://twitter.com/vuejs" target="_blank">VueJS Twitter</a></li>
       <br>
-      <l1><a href="http://graphql.org/"></a>GraphQL.org</l1>
-      <l1><a href="https://www.apollographql.com/client"></a>Apollo GraphQL</l1>
-      <l1><a href="https://twitter.com/apollographql"></a>Apollo GraphQL Twitter</l1>
+      <li><a href="http://graphql.org/"></a>GraphQL.org</li>
+      <li><a href="https://www.apollographql.com/client"></a>Apollo GraphQL</li>
+      <li><a href="https://twitter.com/apollographql"></a>Apollo GraphQL Twitter</li>
       <br>
       <li><a href="https://github.com/Matt-Dionis/webpack-apollo-graphql" target="_blank">Docs for This Template</a></li>
     </ul>
