@@ -27,7 +27,7 @@ module.exports = {
       type: 'string',
       required: false,
       message: 'Project description',
-      default: 'A Vue.js project',
+      default: 'A Vue.js & GraphQL project using Apollo-client 2.0',
     },
     author: {
       type: 'string',

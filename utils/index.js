@@ -77,8 +77,8 @@ To get started:
       data
     )}${lintMsg(data)}npm run dev`
   )}
-  
-Documentation can be found at https://vuejs-templates.github.io/webpack
+
+Documentation can be found at https://github.com/Matt-Dionis/webpack
 `
   console.log(message)
 }
