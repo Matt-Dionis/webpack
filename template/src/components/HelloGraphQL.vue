@@ -36,7 +36,9 @@ export default {
   data () {
     return {
       msg: 'Welcome to Your Vue.js & Apollo GraphQL App',
-      location: {}
+      location: {
+        weather: {}
+      }
     }
   },
   apollo: {
