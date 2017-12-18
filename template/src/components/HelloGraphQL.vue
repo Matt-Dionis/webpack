@@ -2,8 +2,8 @@
   <div class="hello">
     <h1>\{{ msg }}</h1>
     <h2>Current Weather in San Francisco:</h2>
-    <h4>{{location.weather.summary}}</h4>
-    <h3>{{location.weather.temperature}}</h3>
+    <h4>{{ location.weather.summary }}</h4>
+    <h3>{{ location.weather.temperature }}</h3>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">VueJS Core Docs</a></li>
