@@ -16,7 +16,7 @@ Vue.config.productionTip = false
 
 // Provide your own uri for a GraphQL endpoint here
 const httpLink = new HttpLink({
-  uri: 'https://launchpad.graphql.com/5rrx10z19'
+  uri: 'https://5rrx10z19.lp.gql.zone/graphql'
 })
 
 const apolloClient = new ApolloClient({

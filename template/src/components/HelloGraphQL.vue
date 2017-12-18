@@ -1,11 +1,9 @@
 <template>
   <div class="hello">
     <h1>\{{ msg }}</h1>
-    <h2>Current Weather at {{ place }}:</h2>
-    <ul>
-      <li>{{weather.weather.temperature}}</li>
-      <li>{{weather.weather.summary}}</li>
-    </ul>
+    <h2>Current Weather in San Francisco:</h2>
+    <h4>{{location.weather.summary}}</h4>
+    <h3>{{location.weather.temperature}}</h3>
     <h2>Essential Links</h2>
     <ul>
       <li><a href="https://vuejs.org" target="_blank">VueJS Core Docs</a></li>
@@ -31,22 +29,21 @@
 </template>
 
 <script>
-import WEATHER_QUERY from '../graphql/CommentQuery.graphql';
+import WEATHER_QUERY from '../graphql/WeatherQuery.gql'
 
 export default {
   name: 'HelloGraphQL',
   data () {
     return {
       msg: 'Welcome to Your Vue.js & Apollo GraphQL App',
-      place: 'Fenway Park',
-      weather: {}
+      location: {}
     }
   },
-	apollo: {
-    weather: {
+  apollo: {
+    location: {
       query: WEATHER_QUERY,
       variables: {
-        place: this.place
+        place: 'Golden Gate Bridge'
       }
     }
   }
