@@ -1,6 +1,6 @@
 #import "./LocationFragment.gql"
 
-query weather($place: String!) {
+query location($place: String!) {
   location(place: $place) {
     ...locationFields
   }
