@@ -1,0 +1,9 @@
+fragment locationFields on Location {
+  city
+  country
+  mapLink
+  weather {
+    summary
+    temperature
+  }
+}
