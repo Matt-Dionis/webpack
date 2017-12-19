@@ -1,13 +1,16 @@
-# vue-webpack-boilerplate
+# vue-webpack-apollo-graphql-boilerplate
 
 > A full-featured Webpack setup with hot-reload, lint-on-save, unit testing & css extraction.
 
-> This template is Vue 2.0 compatible. For Vue 1.x use this command: `vue init webpack#1.0 my-project`
+> This template also comes with apollo-client 2.0 set up as well as support for .graphql/.gql files.
+
+> This template is Vue 2.0 compatible.
 
 ## Documentation
 
-- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template are answered and each part is described in greater detail
+- [For this template](http://vuejs-templates.github.io/webpack): common questions specific to this template's "parent" template, vue-webpack, are answered and each part is described in greater detail
 - [For Vue 2.0](http://vuejs.org/guide/): general information about how to work with Vue, not specific to this template
+- [For Apollo-client 2.0](https://www.apollographql.com/client/): general information about how to work with apollo-client 2.0, not specific to this template
 
 ## Usage
 
@@ -15,16 +18,16 @@ This is a project template for [vue-cli](https://github.com/vuejs/vue-cli). **It
 
 ``` bash
 $ npm install -g vue-cli
-$ vue init webpack my-project
+$ vue init Matt-Dionis/webpack-apollo-graphql my-project
 $ cd my-project
 $ npm install
 $ npm run dev
 ```
 
-This will scaffold the project using the `master` branch. If you wish to use the latest version of the webpack template, do the following instead:
+This will scaffold the project using the `master` branch. If you wish to use the latest version of the webpack-apollo-graphql template, do the following instead:
 
 ``` bash
-$ vue init webpack#develop my-project
+$ vue init Matt-Dionis/webpack-apollo-graphql#develop my-project
 ```
 
 :warning: **The develop branch is not considered stable and can contain bugs or not build at all, so use at your own risk.**
