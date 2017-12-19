@@ -4,26 +4,13 @@
     <h2>Current Weather in San Francisco:</h2>
     <h4>\{{ location.weather.summary }}</h4>
     <h3>\{{ location.weather.temperature }}</h3>
-    <h2>Essential Links</h2>
+    <h2>Links</h2>
     <ul>
-      <li><a href="https://vuejs.org" target="_blank">VueJS Core Docs</a></li>
-      <li><a href="https://forum.vuejs.org" target="_blank">VueJS Forum</a></li>
-      <li><a href="https://chat.vuejs.org" target="_blank">VueJS Community Chat</a></li>
-      <li><a href="https://twitter.com/vuejs" target="_blank">VueJS Twitter</a></li>
-      <br>
-      <li><a href="http://graphql.org/"></a>GraphQL.org</li>
-      <li><a href="https://www.apollographql.com/client"></a>Apollo GraphQL</li>
-      <li><a href="https://twitter.com/apollographql"></a>Apollo GraphQL Twitter</li>
+      <li><a href="https://www.apollographql.com/client">Apollo GraphQL</a></li>
+      <li><a href="https://twitter.com/apollographql">Apollo GraphQL Twitter</a></li>
+      <li><a href="https://twitter.com/mattdionis">Matt Dionis Twitter (template creator)</a></li>
       <br>
       <li><a href="https://github.com/Matt-Dionis/webpack-apollo-graphql" target="_blank">Docs for This Template</a></li>
-    </ul>
-    <h2>Ecosystem</h2>
-    <ul>
-      <li><a href="http://router.vuejs.org/" target="_blank">vue-router</a></li>
-      <li><a href="http://vuex.vuejs.org/" target="_blank">vuex</a></li>
-      <li><a href="http://vue-loader.vuejs.org/" target="_blank">vue-loader</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">awesome-vue</a></li>
-      <li><a href="https://github.com/vuejs/awesome-vue" target="_blank">apollo-client 2.0</a></li>
     </ul>
   </div>
 </template>
@@ -35,7 +22,7 @@ export default {
   name: 'HelloGraphQL',
   data () {
     return {
-      msg: 'Welcome to Your Vue.js & Apollo GraphQL App',
+      msg: 'Welcome to Your VueJS + Apollo GraphQL App',
       location: {
         weather: {}
       }
